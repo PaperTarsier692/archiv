@@ -85,3 +85,27 @@ a:visited {
 .talvin_nachricht {
   background-image: url("resources/talvin_nachricht_background.png");
 }
+
+.bubble {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+  width: 10ex; /* Set a specific width */
+  height: 2ex; /* Set a specific height */
+  overflow: auto; /* Add scroll if content exceeds the height */
+ }
+ 
+
+.bubble::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #f0f0f0;
+}
