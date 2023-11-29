@@ -87,25 +87,19 @@ a:visited {
 }
 
 .bubble {
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
-  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
-  width: 10ex; /* Set a specific width */
-  height: 2ex; /* Set a specific height */
-  overflow: auto; /* Add scroll if content exceeds the height */
- }
- 
-
-.bubble::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #f0f0f0;
+  border: 1px solid rgb(13, 76, 102);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-right: 3px;
+  padding-top: 2px;
+  padding-left: 3px;
+  padding-bottom: 2px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  line-height: 1.5;
+  background-color: rgb(23, 140, 186);
+  font-style: italic;
 }
