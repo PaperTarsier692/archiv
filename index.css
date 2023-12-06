@@ -66,6 +66,7 @@ a:visited {
   display: inline-block;
   justify-content: center;
   align-items: center;
+  left: 50%;
 }
 
 .socials_icons {
